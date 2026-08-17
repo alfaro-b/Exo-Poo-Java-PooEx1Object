@@ -33,6 +33,13 @@ public class TestCity {
 		// Ex1.4 Affichage des infos d'une ville sous le format d'une phrase
 		System.out.println("Ex 1.4 ");
 		toulouse.display();
+		System.out.println();
+		
+		// Ex1.5 
+		System.out.println("Ex 1.5 ");
+		System.out.println(toulouse);
+		System.out.println("Affiche la référence de l'objet");
+		System.out.println();
 	}
 
 }
