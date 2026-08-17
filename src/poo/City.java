@@ -5,20 +5,26 @@ public class City {
 	// Attributs
 	private String name;
 	private String country;
-	private Integer population;
+	private int population;
 	private static int counter = 0;
 	
 	// Constructeur
-	public City(String name, String country, Integer population) {
+	public City(String name, String country, int population) {
 		this.name = name;
 		this.country = country; 
 		this.population = population;
 		counter++;
 	}
-	public City(String name, Integer population) {
+	public City(String name, int population) {
 		this.name = name;
 		this.country = "unknown"; 
 		this.population = population;
+		counter++;
+	}
+	public City(String name, String country) {
+		this.name = name;
+		this.country = country; 
+		this.population = 0;
 		counter++;
 	}
 	
@@ -35,13 +41,13 @@ public class City {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public Integer getPopulation() {
+	public int getPopulation() {
 		return population;
 	}
-	public void setPopulation(Integer population) {
+	public void setPopulation(int population) {
 		this.population = population;
 	}
-	public static Integer getCounter() {
+	public static int getCounter() {
 		return counter;
 	}
 
@@ -64,6 +70,10 @@ public class City {
 				" en " + this.country + 
 				" ayant " + this.population + " habitants ";
 	}
-	
+	public String getDetails() {
+	    return "[name = " + this.name + ", " +
+	           "state = " + this.country + ", " +
+	           "NbInhabitants = " + this.population + "]";
+	}
 	
 }
