@@ -38,8 +38,14 @@ public class TestCity {
 		// Ex1.5 
 		System.out.println("Ex 1.5 ");
 		System.out.println(toulouse);
-		System.out.println("Affiche la référence de l'objet");
+		System.out.println("Affichait la référence de l'objet avant ajout de la méthode toString");
 		System.out.println();
+		
+		// Ex1.6 Utilisation de la méthode toString
+		System.out.println("Ex 1.6 ");
+		System.out.println(toulouse);
+		System.out.println();
+		
 	}
 
 }

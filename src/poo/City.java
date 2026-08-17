@@ -52,4 +52,10 @@ public class City {
 				" en " + this.country + 
 				" ayant " + this.population + " habitants " );
 	}
+	public String toString() {
+		return "Ville de " + this.name + 
+				" en " + this.country + 
+				" ayant " + this.population + " habitants ";
+	}
+	
 }
