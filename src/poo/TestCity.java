@@ -15,7 +15,7 @@ public class TestCity {
 		
 		System.out.println();
 		
-		city1.population += 20000;
+		city1.setPopulation(city1.getPopulation() + 20000);
 		city1.display();
 	}
 
