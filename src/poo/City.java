@@ -13,6 +13,11 @@ public class City {
 		this.country = country; 
 		this.population = population;
 	}
+	public City(String name, Integer population) {
+		this.name = name;
+		this.country = "unknown"; 
+		this.population = population;
+	}
 	
 	// Accesseurs
 	public String getName() {
@@ -37,8 +42,8 @@ public class City {
 	// Méthodes
 	public void display() {
 		System.out.println(
-				"Nom : " + this.name + "\t" + 
-				"Pays : " + this.country + "\t" + 
-				"Nombre d'habitants : " + this.population);
+				"[Ville : " + this.name + "] " + 
+				"[Pays : " + this.country + "] " + 
+				"[Nombre d'habitants : " + this.population + "] " );
 	}
 }
