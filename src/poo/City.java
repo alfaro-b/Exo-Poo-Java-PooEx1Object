@@ -40,10 +40,16 @@ public class City {
 	}
 	
 	// Méthodes
-	public void display() {
+	public void displayDetails() {
 		System.out.println(
 				"[Ville : " + this.name + "] " + 
 				"[Pays : " + this.country + "] " + 
 				"[Nombre d'habitants : " + this.population + "] " );
+	}
+	public void display() {
+		System.out.println(
+				"Ville de " + this.name + 
+				" en " + this.country + 
+				" ayant " + this.population + " habitants " );
 	}
 }

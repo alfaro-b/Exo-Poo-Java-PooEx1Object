@@ -3,28 +3,36 @@ package poo;
 public class TestCity {
 
 	public static void main(String[] args) {
-		City city1 = new City("Toulouse", "France", 450000);
-		City city2 = new City("Bordeaux", "France", 270000);
-		City city3 = new City("Lyon", "France", 523000);
-		City city4 = new City("Marseille", "France", 892000);
-		City city5 = new City("Rabat", 577000);
+		City toulouse = new City("Toulouse", "France", 450000);
+		City bordeaux = new City("Bordeaux", "France", 270000);
+		City lyon = new City("Lyon", "France", 523000);
+		City marseille = new City("Marseille", "France", 892000);
+		City rabat = new City("Rabat", 577000);
 		
-		city1.display();
-		city2.display();
-		city3.display();
-		city4.display();
+		System.out.println("Ex 1.1 ");
+		toulouse.displayDetails();
+		bordeaux.displayDetails();
+		lyon.displayDetails();
+		marseille.displayDetails();
 		System.out.println();
 		
 		// city1.population += 20000;
 		// Ex1.2 Plus possible car attributs passés en private, il faut passer par accesseurs
-		city1.setPopulation(city1.getPopulation() + 20000);
-		city1.display();
+		System.out.println("Ex 1.2 ");
+		toulouse.setPopulation(toulouse.getPopulation() + 20000);
+		toulouse.displayDetails();
 		System.out.println();
 		
 		// Ex1.3 nouveau constructeur avec 2 paramètres
-		city5.display();
-		city5.setCountry("Maroc");
-		city5.display();
+		System.out.println("Ex 1.3 ");
+		rabat.displayDetails();
+		rabat.setCountry("Maroc");
+		rabat.displayDetails();
+		System.out.println();
+		
+		// Ex1.4 Affichage des infos d'une ville sous le format d'une phrase
+		System.out.println("Ex 1.4 ");
+		toulouse.display();
 	}
 
 }
