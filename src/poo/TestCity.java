@@ -46,6 +46,11 @@ public class TestCity {
 		System.out.println(toulouse);
 		System.out.println();
 		
+		// Ex1.7 Compte du nombre d'instances de City
+		System.out.println("Ex 1.6 ");
+		System.out.println("Nombres de villes créées : " + City.getCounter());
+		System.out.println();
+		
 	}
 
 }

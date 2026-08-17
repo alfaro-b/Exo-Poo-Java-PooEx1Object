@@ -6,17 +6,20 @@ public class City {
 	private String name;
 	private String country;
 	private Integer population;
+	private static int counter = 0;
 	
 	// Constructeur
 	public City(String name, String country, Integer population) {
 		this.name = name;
 		this.country = country; 
 		this.population = population;
+		counter++;
 	}
 	public City(String name, Integer population) {
 		this.name = name;
 		this.country = "unknown"; 
 		this.population = population;
+		counter++;
 	}
 	
 	// Accesseurs
@@ -38,6 +41,10 @@ public class City {
 	public void setPopulation(Integer population) {
 		this.population = population;
 	}
+	public static Integer getCounter() {
+		return counter;
+	}
+
 	
 	// Méthodes
 	public void displayDetails() {
@@ -57,5 +64,6 @@ public class City {
 				" en " + this.country + 
 				" ayant " + this.population + " habitants ";
 	}
+	
 	
 }
