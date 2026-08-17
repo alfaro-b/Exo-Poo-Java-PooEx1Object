@@ -75,5 +75,14 @@ public class City {
 	           "state = " + this.country + ", " +
 	           "NbInhabitants = " + this.population + "]";
 	}
+	public String getBirthCityPersonality() {
+		String result = "Ville de naissance : " + this.name + ", " +
+		           this.country;
+		String population = ", population " + this.name + " " + this.population + " habitants";
+		if (this.population != 0) {
+			result += population;
+		}
+	    return result;
+	}
 	
 }

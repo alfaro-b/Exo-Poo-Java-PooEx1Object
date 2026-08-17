@@ -76,4 +76,27 @@ public class Person {
 
 	    return result;
 	}
+	
+	public void displayPersonalities() {
+		System.out.println(
+				this.name + ", " + 
+				this.firstName + ", " + 
+				this.age + "ans, " +
+				"habitant " + this.address + ", " +
+				this.birthCity.getBirthCityPersonality()
+				);
+	}
+	public void displayFilterPersonalities() {
+		if(this.birthCity.getCountry() == "France" || 
+				this.address == "Paris") {
+			System.out.println(
+					this.name + ", " + 
+					this.firstName + ", " + 
+					this.age + "ans, " +
+					"habitant " + this.address + ", " +
+					this.birthCity.getBirthCityPersonality()
+					);
+		}
+		
+	}
 }

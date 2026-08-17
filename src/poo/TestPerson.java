@@ -7,7 +7,7 @@ public class TestPerson {
 		Person poutine = new Person("Poutine", "Vladimir", 68);
 		Person biden = new Person("Biden", "Joe");
 		
-		System.out.println("Ex 1.8 Création et affichage de Person");
+		System.out.println("Ex 1.8 et 1.9 Création et affichage de Person");
 		System.out.println(manu);
 		System.out.println(poutine);
 		System.out.println(biden);
