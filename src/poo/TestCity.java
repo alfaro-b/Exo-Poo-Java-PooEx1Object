@@ -1,7 +1,15 @@
 package poo;
 
+/**
+ * Classe de test de la classe City.
+ */
 public class TestCity {
 
+	/**
+	 * Programme principal permettant de tester les différentes fonctionnalités de la classe City.
+	 *
+	 * @param args arguments de la ligne de commande
+	 */
 	public static void main(String[] args) {
 		City toulouse = new City("Toulouse", "France", 450000);
 		City bordeaux = new City("Bordeaux", "France", 270000);
@@ -47,8 +55,8 @@ public class TestCity {
 		System.out.println();
 		
 		// Ex1.7 Compte du nombre d'instances de City
-		System.out.println("Ex 1.6 ");
-		System.out.println("Nombres de villes créées : " + City.getCounter());
+		System.out.println("Ex 1.7 ");
+		System.out.println("Nombre de villes créées : " + City.getCounter());
 		System.out.println();
 		
 	}
