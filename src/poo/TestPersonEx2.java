@@ -11,6 +11,9 @@ public class TestPersonEx2 {
 		Person lawrence = new Person("Lawrence", "Jennifer", 30, "Louisville aux USA", new City("Indians Hills", "USA"));
 		
 		System.out.println("Ex 2.0 Affichage personnalités nées en France ou habitants Paris");
+		System.out.println();
+		
+		// Affichage de toutes les personnalités
 		System.out.println("Liste des personnalités");
 		manu.displayPersonalities();
 		sarkozy.displayPersonalities();
@@ -20,6 +23,7 @@ public class TestPersonEx2 {
 		lawrence.displayPersonalities();
 		System.out.println();
 		
+		// Affichage des personnalités nées en France ou habitant à Paris
 		System.out.println("Liste après filtre");
 		manu.displayFilterPersonalities();
 		sarkozy.displayFilterPersonalities();

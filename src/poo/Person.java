@@ -87,8 +87,10 @@ public class Person {
 				);
 	}
 	public void displayFilterPersonalities() {
-		if(this.birthCity.getCountry() == "France" || 
-				this.address == "Paris") {
+		if ((this.birthCity != null 
+	            && this.birthCity.getCountry().equalsIgnoreCase("France"))
+	        || (this.address != null 
+	            && this.address.toLowerCase().contains("paris"))) {
 			System.out.println(
 					this.name + ", " + 
 					this.firstName + ", " + 
